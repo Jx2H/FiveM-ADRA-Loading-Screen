@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADRA - FiveM Server Loading Screen</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="./css/materialize.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <div id="player"></div>
+        <div id="overlag"></div>
+
+        <img id="cursor">
+
+        <div id="music-console">
+            <span id="music-name"></span><br>
+            <span class="icon-play3" onclick="onPlayerReady()" style="font-size: 30px;"> </span> 
+            <span class="icon-pause2" onclick="onPlayerPause()" style="font-size: 30px;"> </span>  
+            <span class="icon-next2" onclick="onPlayerNext()" style="font-size: 30px;"> </span>
+            <input id="music_value" type="range" min="0" max="100" onchange="setvolume(this.value)">
+            &nbsp;&nbsp;&nbsp;
+            <span class="icon-wrench" onclick="location.reload()" style="font-size: 30px;"></span> 
+        </div>
+
+        <div id="main">
+            <div id="main-h1"></div>
+            <div class = "progress lime" style="height: 15px;border-radius: 10px;">
+                <div class = "indeterminate blue"></div>
+            </div>
+            <div id="main-message"></div>
+        </div>
+    </body>
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/jquery.backstretch.min.js"></script>
+    <script src="./config.js"></script>
+    <script src="./js/adra.min.js"></script>
+</html>
