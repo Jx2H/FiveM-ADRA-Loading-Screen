@@ -76,7 +76,7 @@ input[type=range][id=music_value]::-webkit-slider-thumb {
     top: 0px;
     left: 0px;
     z-index: -99;
-    overflow:hidden; /* or overflow:auto; if you want scrollbars */
+    overflow:hidden;
 }
 
 #overlag {
